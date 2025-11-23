@@ -5,9 +5,6 @@ function findElement(arr,func){
       output = arr[i];
       break;
     };
-    if(output == null){
-      output = undefined;
-    };
   };
   return output;
 };
