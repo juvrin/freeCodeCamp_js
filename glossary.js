@@ -32,3 +32,6 @@ function mutation(arr){
 
 let test = mutation(["Hello","hey"]) //should give false, ["alien", "line"] should give true
 console.log(test);
+
+//====== generate random number between 2 numbers
+const randomNum = Math.floor(Math.random() * (max - min)) + min;
