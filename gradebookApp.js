@@ -12,7 +12,6 @@ const values = [
 ];
 
 
-
 function getGrade(studentScore){
   let grade = "";
   for(const v of values){

@@ -39,3 +39,45 @@ const randomNumZonderMax = Math.floor(Math.random() * (max - min)) + min;
 //====== generate random number between 2 numbers - met max
 // let op: de max waarde is niet een mogelijkheid op deze manier. daarvoor moet je doen: 
 const randomNumMetMax =  Math.floor(Math.random() * (max - min + 1)) + min
+
+
+//=================================================
+//===== VERSCHIL FOR..OF en FOR...IN LOOPS ========
+//=================================================
+let person = {
+    name:"Alice",
+    age:30
+};
+let numbers = [1,2,3,4,5];
+
+//==== for ... in loop: loop over properties of objects ======
+console.log("\ndit geeft de waarden");
+for (prop in person){
+    console.log(person[prop]);
+};
+
+console.log("\ndit geeft de keys");
+for (prop in person){
+    console.log(prop);
+};
+
+
+//==== for ... of loop: loop over iterables i.e. strings, arrays, arrays of objects, etc ======
+console.log("\ndit geeft de waarden");
+for (const num of numbers){
+    console.log(num);
+};
+
+//for...in is not recommended to loop over arrays
+// console.log("\ndit geeft de indices");
+// for (const num in numbers){
+//     console.log(num);
+// };
+
+
+//=================================================
+//===== sort() met nummers ========
+//=================================================
+const numbers1 = [414, 200, 5, 10, 3];
+
+numbers1.sort((a, b) => a - b);

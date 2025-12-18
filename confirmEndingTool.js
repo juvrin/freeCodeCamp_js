@@ -19,3 +19,4 @@ let confirmEnding = (a, b) => a.slice(-b.length) === b ? true: false;;
 
 let test = confirmEnding("Bastian", "ian");
 console.log(test);
+

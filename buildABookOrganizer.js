@@ -31,7 +31,6 @@ console.log(sortByYear(books[2], books[1]));
 const filteredBooks = books.filter((book) => book.releaseYear > 1950);
 
 filteredBooks.sort(sortByYear);
-
 console.log(filteredBooks);
 
 
