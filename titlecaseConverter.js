@@ -9,3 +9,20 @@ function titleCase(str){
 };
 let test = titleCase("I'm a little tea pot");
 console.log(test);
+
+
+// ALTERNATIEF
+// function titleCase(str){
+//     let words = str.split(" ");
+//     let finalArr = [];
+//     for (let word of words){
+//         let tempArr = [];
+//         tempArr.push(word[0].toUpperCase())
+//         tempArr.push(word.slice(1,word.length).toLowerCase())
+//         finalArr.push(tempArr.join(""));
+//     }
+//     return finalArr.join(" ");
+// };
+
+// let test2 = titleCase("SUCK oN tHIS!");
+// console.log(test2);
