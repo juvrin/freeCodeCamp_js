@@ -81,3 +81,20 @@ for (const num of numbers){
 const numbers1 = [414, 200, 5, 10, 3];
 
 numbers1.sort((a, b) => a - b);
+
+
+//======= convert string to array: 3 ways ========
+let test1 = "SUCK oN tHIS!";
+console.log(test1);
+let test2 = Array.from(test1);
+let test3 = Array.prototype.slice.call(test1);
+let test4 = [...test1]
+console.log(`Array.from(): ${test2}`);
+console.log(`Slice: ${test3}`);
+console.log(`Spread operator: ${test4}`);
+
+//======= create shallow copy of array: 3 ways ========
+const originalArray = [1,2,3,4];
+const copyArray1 = [].concat(originalArray);
+const copyArray2 = originalArray.slice();
+const copyArray3 = [...originalArray];
