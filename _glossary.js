@@ -79,7 +79,6 @@ for (const num of numbers){
 //===== sort() met nummers ========
 //=================================================
 const numbers1 = [414, 200, 5, 10, 3];
-
 numbers1.sort((a, b) => a - b);
 
 
